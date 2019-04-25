@@ -1,0 +1,39 @@
+<view class="container">
+	<image class="login_logo" src="/images/logo.png"></image>
+    <view class="login_way">
+        <text class="{{loginWay ? 'login_way_selected' : ''}}" data-way="fast" bindtap="loginWay">快捷登录</text>
+        <text class="{{!loginWay ? 'login_way_selected' : ''}}" data-way="account" bindtap="loginWay">账户登录</text>
+    </view>
+	<block s-if="loginWay">
+		<form bindsubmit="formSubmitHandle">
+			<view class="phone_int">
+				<input type="number" name="mobile" bindinput="mobileInput" value="{= mobile =}" placeholder="输入手机号" />
+			</view>
+			<view class="yz_int">
+				<input type="number" name="yzm" placeholder="输入验证码" />
+				<text bindtap="sendYZM">{{secondMsg}}</text>
+				<!-- <button type="primary" disabled="{{sendCodeBtnDisabled}}" bindtap="sendYZM">{{secondMsg}}</button> -->
+			</view>
+			<view>
+				<button type="primary" form-type="submit" disabled="{{loginBtn}}" class="login_btn">登录</button>
+			</view>
+		</form>
+        <view class="login_btext">
+            <text class="">未注册的用户将自动注册，且表示已同意</text>
+            <text class="register_link">注册协议</text>
+        </view>
+	</block>
+    <block s-else>
+		<form bindsubmit="formSubmitHandle">
+			<view class="phone_int">
+				<input type="text" name="mobile" bindinput="mobileInput" value="{= mobile =}" placeholder="输入手机号/用户名" />
+			</view>
+			<view class="yz_int">
+				<input type="number" name="yzm" bindinput="pwdInput" placeholder="输入密码" />
+			</view>
+			<view>
+				<button type="primary" form-type="submit" disabled="{{mobile.length != 11 || pwd == '' || pwd == null}}" class="login_btn">登录</button>
+			</view>
+		</form>
+	</block>
+</view>

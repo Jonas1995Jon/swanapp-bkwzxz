@@ -1,0 +1,76 @@
+.container{
+    padding: 0 50rpx;
+    font-family: "微软雅黑"
+}
+.login_logo{
+    width: 100rpx;
+    height: 100rpx;
+    margin: 60rpx auto 80rpx auto;
+    display: block;
+}
+.login_way {
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 100rpx;
+    display:flex;
+    justify-content:center;
+}
+.login_way text {
+    margin: 0 60rpx;
+    padding-bottom:2px;
+}
+.login_way_selected {
+    color:red;
+    border-bottom:2px solid;
+}
+.phone_int{
+     border-bottom: 1rpx solid #cccccc;
+    padding-bottom: 25rpx;
+     margin-bottom: 60rpx;
+}
+.phone_int input{
+    width: 100%;
+    height:30rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+.yz_int{
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #cccccc;
+    padding-bottom: 25rpx;
+     margin-bottom: 80rpx;
+}
+.yz_int input{
+    flex: 1;
+    height:30rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+.yz_int text{
+    font-size: 30rpx;
+    color: #cccccc;
+}
+.login_btn{
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: #cccccc;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50rpx;
+    outline: none;
+    border: none;
+}
+button::after {
+  border: 0;
+  outline: none;
+}
+.login_btext{
+    font-size: 24rpx;
+    color: #cccccc;
+    text-align: center;
+}
+.register_link{
+    color: #6cc2ff;
+}

@@ -1,0 +1,131 @@
+.container{
+    padding-bottom: 98rpx;
+    position: relative;
+    height: 100%;
+    box-sizing:border-box;
+}
+.deteils-tit{
+    color: #333333;
+    font-size: 44rpx;
+    padding: 30rpx 0;
+}
+.deteils-top{
+    padding: 0 34rpx;
+    background: #fff;
+}
+.deteils-subtit{
+    font-size: 28rpx;
+    color: #333333;
+    margin-bottom: 35rpx;
+}
+.deteils-head{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    margin-right: 15rpx;
+}
+.deteils-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20rpx;
+}
+.deteils-info-name{
+    font-size: 28rpx;
+    color: #333333;
+    flex: 1;
+}
+.point-info{
+    width: 8rpx;
+    height: 8rpx;
+    border-radius: 50%;
+    background: #ececec;
+    margin: 0 10rpx;
+}
+.deteils-info-r{
+    display: flex;
+    align-items: center;
+    font-size: 22rpx;
+    color: #cccccc;
+    letter-spacing: 2rpx;
+}
+.deteils-bottom{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #f35b5b;
+    font-size: 24rpx;
+    color: #ffffff;
+    text-align: center;
+    height: 95rpx;
+    line-height: 95rpx;
+}
+.deteils-bottom-hover{
+     background: #d03535;
+}
+.answer-list{
+    background: #fff;
+    padding: 0 34rpx;
+    margin-top: 10rpx;
+}
+.answer_listtit{
+    padding: 20rpx 0 30rpx 0;
+    font-size: 24rpx;
+    color: #333333;
+}
+.answer-list-li{
+   padding-bottom: 40rpx;
+}
+.answer-list-li-tit{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15rpx;
+}
+.answer-list-li-tit>image{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius:50%;
+    margin-right: 18rpx; 
+}
+.answer-list-li-titname{
+    font-size: 28rpx;
+    color: #999999;
+    flex: 1;
+}
+.answer-list-li-tit-r{
+    font-size: 22rpx;
+    color: #cccccc;
+}
+.answer-list-li-tit-r>text{
+    margin-right: 22rpx;
+}
+.answer-list-li-content{
+    font-size: 28rpx;
+    color: #333333;
+    line-height: 48rpx;
+    padding-left: 73rpx;
+}
+/*最佳答案*/
+.best-answer{
+    min-height: 65px;
+    padding: 20rpx 30rpx 0 30rpx; 
+    border-bottom: 30rpx solid #fff;
+    background:url("../../../images/bestAnswer.png") #fef5f5 no-repeat 411rpx  34rpx ;
+    background-size:177rpx auto; 
+}
+.best-answer .answer-list-li-tit>image{
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+}
+.best-answer .answer-list-li-titname{
+    color: #333333;
+    font-size: 26rpx;
+}
+.best-answer .answer-list-li{
+    padding-bottom: 10rpx;
+}
+.best-answer .answer-list-li-content{
+    padding-left: 44rpx;
+}

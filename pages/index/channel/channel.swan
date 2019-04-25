@@ -1,0 +1,32 @@
+<view class="mychannel">
+    <view class="mychannel-title">
+        <view class="mychannel-line"></view>
+        <view class="mychannel-name">我的频道</view>
+    </view>
+    <view class="channel-list">
+        <block s-for="{{myChannelList}}" s-for-item="myChanne">
+            <view class="channel-one" style="margin-right:{{myChanne.level_id == 0 ? 0:-24}}rpx;" bindtap="myChannelTap">
+                <view class="channel-list-name">
+                    <text>{{myChanne.level_name}}</text>
+                </view>
+                <image hidden="{{myChanne.level_id == 0 ? true:false}}" data-index="{{index}}" catchtap="closeTap" class="channel-list-img" src="../../../images/close.png"></image>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="mychannel">
+    <view class="mychannel-title">
+        <view class="mychannel-line"></view>
+        <view class="mychannel-name">频道推荐</view>
+    </view>
+    <view class="channel-list">
+        <block s-for="{{channelList}}" s-for-item="channel">
+            <view class="channel-one" data-index="{{index}}" bindtap="addchannel">
+                <view class="channel-list-name">
+                    <text class="channel-add">+</text>
+                    <text>{{channel.realname}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

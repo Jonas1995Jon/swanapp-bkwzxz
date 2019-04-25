@@ -1,0 +1,20 @@
+<!--pages/nav/nav.wxml-->
+<template name="nav">
+	<view class="top-news" style='{{nav.backgroundColor == 1 ? "background: #fff;" : "background:#fff;"}}'>
+		<view class="nav-scroll">
+			<scroll-view class="scroll-view_H" scroll-x="true" scroll-left="{=nav.scrollLeft=}">
+				<block s-key="nav" s-for="navItem, navindex in nav.section">
+					<view class='nav-view'>
+						<text id="{{navItem.level_id}}" catchtap="handleTap" data-index="{{navindex}}" class="nav-name {{navItem.level_id == nav.currentId ? 'nav-hover' : ''}}">{{navItem.level_name}}</text>
+					</view>
+				</block>
+			</scroll-view>
+		</view>
+		<view class="nav-menu">
+			<image src="../../images/filter.png" mode="aspectFit" bindtap="toChannel"></image>
+		</view>
+	</view>
+	<block s-if="nav.showView != 1">
+		<view style='margin-top:70rpx;'></view>
+	</block>
+</template>

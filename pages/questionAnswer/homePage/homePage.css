@@ -1,0 +1,96 @@
+@import '../../nav/nav.css';
+
+/*内容*/
+.content{
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.content-left{
+  width: 134rpx;
+  height: 100%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+.content-left image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  
+}
+
+.content-right{
+  width: 563rpx;
+  height: 100%;
+  display:flex;
+  margin-top: 31rpx;
+  margin-bottom: 31rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-title{
+  font-size: 33rpx;
+  width: 553rpx;
+}
+
+.content-bottom{
+  display:flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #999999;
+  padding-top: 15rpx;
+  width: 563rpx;
+}
+
+.hr {
+  width:91%;
+  height: 2rpx;
+  margin:20rpx auto;
+  background-color: #eeeeee;
+}
+
+/*最后*/
+.bottom{
+  position: fixed;
+  bottom: 122rpx;
+  right: 36rpx;
+}
+.bottom image{
+  width: 110rpx;
+  height: 111rpx;
+}
+
+/*加载更多*/
+.box{
+  width: 100%;
+}
+
+.loading{  
+  padding: 10rpx;  
+  font-size:24rpx;
+  text-align:center;
+  color:red;
+}  
+.loading:before{  
+  display: inline-block;  
+  margin-right: 5rpx;  
+  vertical-align: middle;  
+  content: '';  
+  width: 40rpx;  
+  height: 40rpx;  
+  background-size: contain;  
+  animation: rotate 1s linear infinite;   
+ } 
+ .loading.complete{
+   font-size: 24rpx;  
+ } 
+.loading.complete:before{  
+  display: none;  
+  
+ }  
+

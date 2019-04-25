@@ -1,0 +1,34 @@
+<view class="container">
+	<import src="../../nav/nav.swan" />
+	<template is="nav" data="{{{nav}}}"></template>
+
+	<!--内容-->
+	<view class='box'>
+		<!---<scroll-view scroll-y bind:scroll="toscorll">-->
+			<block s-key="listkey" s-for="listItem, listindex in listData">
+				<view class="content" bind:tap="toAnswer" id="{{listItem.id}}">
+					<view class="content-left">
+						<image src="{{listItem.userimg}}"></image>
+					</view>
+					<view class="content-right">
+						<view class="content-title"><text>{{listItem.ask}}</text></view>
+						<view class="content-bottom">
+							<view><text>{{listItem.insertdate}}</text></view>
+							<view style="position:absolute;right:0;margin-right:40rpx;">
+								<text>阅读 {{listItem.visitnum}}</text>
+								<text style="margin-left:30rpx;">回答 {{listItem.answernum}}</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="hr" s-if="(index + 1) != articles.length"></view>
+			</block>
+			<view class="loading" hidden="{{!searchLoading}}">数据加载中...</view>  
+ 	      	<view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>  
+		<!---</scroll-view>-->
+	</view>
+
+	<view class="bottom">
+		<image src="../../../images/add.png" bind:tap="tiaozhuan"></image>
+	</view>
+</view>

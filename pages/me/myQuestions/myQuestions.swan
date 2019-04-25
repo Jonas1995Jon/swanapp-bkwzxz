@@ -1,0 +1,17 @@
+<view class="container">
+	<block s-for="question, index in questions">
+		<view id="{{question.id}}" data-index="{{index}}" class="my_qeslist" hover-class="wbtn_hover" bindtap="toAnswerDetails">
+			<image src="{{baidu_userInfo != '' ? baidu_userInfo.avatarUrl : '/images/defaultHeadImg.png'}}" />
+			<view class="list_info">
+				<text class="my_qeslist_tit">{{question.ask}}</text>
+				<view class="list_info_sub">
+					<text>{{question.questioninsertdate}}</text>
+					<text>阅读&nbsp;{{question.visitnum}}</text>
+					<text>回答{{question.answernum}}</text>
+				</view>
+			</view>
+		</view>
+	</block>
+	<view class="noData" s-if="{{questions.length <= 0}}">暂无数据</view>
+    <view class="loadMore" hidden="{{!loadMore}}">数据加载中...</view>
+</view>

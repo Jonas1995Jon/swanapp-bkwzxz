@@ -1,0 +1,42 @@
+<view class="container">
+	<import src="../nav/nav.swan" />
+	<template is="nav" data="{{{nav}}}"></template>
+	<view class="content">
+		<block s-for="article, index in articles">
+			<block s-if="article.imgs.length == 1">
+				<view id="{{article.id}}" data-index="{{index}}" class="content-item" bindtap="getArticleDetailById">
+					<view class="item-con">
+						<text class="item-title">{{article.title}}</text>
+						<view class="item-tag">
+							<text class="origin">{{article.name}}</text>
+							<text class="view">{{article.viewNum}}阅读</text>
+						</view>
+					</view>
+					<view class="img" s-if="article.imgs.length > 0">
+						<block s-for="img in article.imgs">
+							<image mode="aspectFit" src="{{img}}"></image>
+						</block>
+					</view>
+				</view>
+			</block>
+			<block s-else>
+				<view id="{{article.id}}" data-index="{{index}}" class="content-item1" bindtap="getArticleDetailById">
+					<view class="item-con1">
+						<text class="item-title">{{article.title}}</text>
+					</view>
+					<view class="img1" s-if="article.imgs.length > 0">
+						<block s-for="img in article.imgs">
+							<image mode="aspectFit" src="{{img}}"></image>
+						</block>
+					</view>
+					<view class="item-tag">
+						<text class="origin">{{article.name}}</text>
+						<text class="view">{{article.viewNum}}阅读</text>
+					</view>
+				</view>
+			</block>
+			<view class="hr" s-if="(index + 1) != articles.length"></view>
+		</block>
+		<view class="loadMore" hidden="{{!loadMore}}">数据加载中...</view>
+	</view>
+</view>

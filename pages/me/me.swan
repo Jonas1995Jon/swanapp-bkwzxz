@@ -1,0 +1,17 @@
+<!--个人中心-->
+<view class="container">
+    <view class="user_top">
+        <image src="{{baidu_userInfo != '' ? baidu_userInfo.avatarUrl : '/images/defaultHeadImg.png'}}"/>
+        <text bindtap="logReg">{{bkw_userInfo != '' ? bkw_userInfo.tel : '登录/注册'}}</text>
+    </view>
+    <view class="user_item" hover-class="wbtn_hover" bindtap="toMyQuestions">
+        <text>我的提问</text>
+        <image src="/images/r_arrow.png"/>
+        <view class="user_item_line"></view>
+    </view>
+    <view class="user_item" hover-class="wbtn_hover" bindtap="toMyAnswer">
+        <text>我的回答</text>
+        <image src="/images/r_arrow.png"/>
+        <view class="user_item_line"></view>
+    </view>
+</view>

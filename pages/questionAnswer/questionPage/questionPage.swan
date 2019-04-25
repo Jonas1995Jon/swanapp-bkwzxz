@@ -1,0 +1,31 @@
+<view>
+	<form bindsubmit="formSubmitHandle">
+		<view class="top">
+			<view class="leftview">
+				<view id="fabu" class="{{buttonRight}}"   bindtap="tapHandle">发布</view>
+				<!-- <view form-type="submit" class="button-right" style="border-radius: 50px;" size="mini" disabled="{{subdis}}">发布</view> -->
+			</view>
+		</view>
+		<view class="oneclas">
+			<picker class="picker1" range="{{selectclass1}}" range-key="level_name" value="{{sindex1}}" bindchange="bcPicker1" bindcancel="bclPicker">
+				<view>
+					选择分类:{{selectclass1[sindex1].level_name}}
+				</view>
+			</picker>
+			<picker class="picker2" range="{{selectclass2}}" range-key="level_name" value="{{sindex2}}" bindchange="bcPicker2" bindcancel="bclPicker">
+				<view>
+					选择要发布的频道:{{selectclass2[sindex2].level_name}}
+				</view>
+			</picker>
+		</view>
+		<view class="titleinput">
+			<input bindinput="bindinput1" bindblur="blurcheck1" confirm-type="next" bindconfirm="bindconfirm" name="title" placeholder="请输入问题"
+			/>
+		</view>
+		<view class="hr"></view>
+		<view class="contentinput">
+			<textarea class="content-area" bindinput="bindinput2" bindblur="blurcheck2" name="content" focus="{{contentfocus}}" placeholder="请输入问题描述" auto-height
+			/>
+		</view>
+	</form>
+</view>

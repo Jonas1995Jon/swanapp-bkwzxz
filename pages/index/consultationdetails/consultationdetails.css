@@ -1,0 +1,38 @@
+.details-title{
+    font-size: 38rpx;
+    color: #000;
+    margin: 50rpx 36rpx 25rpx 36rpx;
+}
+.details-share{
+    margin: 0 35rpx 32rpx 35rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.share{
+    font-size: 24rpx;
+    color: #999;
+    display: inline-block;
+}
+.share-title{
+    margin-right: 40rpx;
+}
+.details-share image{
+    width: 32rpx;
+    height: 32rpx;
+}
+.bigimage{
+    margin: 0 34rpx;
+    margin-bottom: 39rpx;
+    height: 400rpx;
+    /* background: #999; */
+}
+.bigimage image{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin: 0 34rpx;
+    font-size: 28rpx;
+    color: #666;
+    text-indent:2em;
+}

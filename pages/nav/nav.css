@@ -1,0 +1,56 @@
+.top-news {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  line-height: 54rpx;
+  overflow: hidden;
+  padding: 5rpx 0 16rpx;
+}
+
+.scroll-view_H {
+  width: 85%;
+  height: 62rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  margin-left: 50rpx;
+}
+
+.nav-view {
+  margin: 0 auto;
+  display:inline-block;
+  text-align: center;
+  flex: 1;
+  padding-right: 50rpx;
+}
+
+.nav-view:last-child {
+  padding-right: 0;
+}
+
+.nav-name {
+  display:inline-block;
+  font-size:28rpx;
+  color: black;
+}
+
+.nav-hover {
+  color: #f23534;
+  border-bottom: 5rpx solid #f23534;
+}
+
+.nav-menu {
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  top:12rpx;
+  right:16rpx;
+}
+
+.nav-menu image {
+    width:100%;
+    height:100%;
+}

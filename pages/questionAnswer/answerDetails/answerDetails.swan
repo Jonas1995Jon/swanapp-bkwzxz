@@ -1,0 +1,66 @@
+<view class="container">
+	<!--顶部问题-->
+	<view class="deteils-top">
+		<view class="deteils-tit">
+			<text>
+				{{ask}}
+			</text>
+		</view>
+		<view class="deteils-subtit">
+			<text>
+				{{askcontent}}
+			</text>
+		</view>
+		<view class="deteils-info">
+			<image class="deteils-head" src="{{userimg}}"></image>
+			<text class="deteils-info-name">{{username}}</text>
+			<view class="deteils-info-r">
+				<text>{{beforeint}}</text>
+				<view class="point-info"></view>
+				<text>阅读{{visitnum}}</text>
+			</view>
+		</view>
+		<!--最佳答案-->
+		<view s-if="sifbest" class="best-answer">
+			<view class="answer-list-li">
+				<view class="answer-list-li-tit">
+					<image src="{{bestuserimg}}"></image>
+					<text class="answer-list-li-titname">{{bestusername}}</text>
+					<view class="answer-list-li-tit-r">
+						<text>{{answertime}}</text>
+					</view>
+				</view>
+				<view class="answer-list-li-content">
+					<rich-text nodes="{{bestanswer}}"></rich-text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!--回答列表-->
+	<view class="answer-list">
+		<view class="answer_listtit">
+			<text>其他回答</text>
+			<text>{{othernum}}</text>
+		</view>
+		<view s-for="listask" s-for-item="lk">
+			<view s-if="{{lk.type == 1 ? false : true}}">
+				<view class="answer-list-li">
+					<view class="answer-list-li-tit">
+						<image src="{{lk.userimg}}"></image>
+						<text class="answer-list-li-titname">{{lk.username}}</text>
+						<view class="answer-list-li-tit-r">
+							<text>{{lk.insertdate}}</text>
+						</view>
+					</view>
+					<view class="answer-list-li-content">
+						<rich-text nodes="{{lk.answer}}"></rich-text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!--底部回答-->
+	<view class="deteils-bottom" hover-class="deteils-bottom-hover">
+		<view bindtap="answerIng">我来回答</view>
+	</view>
+</view>

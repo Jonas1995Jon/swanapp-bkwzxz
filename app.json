@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/me/me",
+        "pages/nav/nav",
+        "pages/index/channel/channel",
+        "pages/index/consultationdetails/consultationdetails",
+        "pages/questionAnswer/homePage/homePage",
+        "pages/questionAnswer/answerDetails/answerDetails",
+        "pages/questionAnswer/homePage/index/index",
+        "pages/questionAnswer/questionPage/questionPage",
+        "pages/questionAnswer/answerPage/answer",
+        "pages/me/login/login",
+        "pages/me/myAnswer/myAnswer",
+        "pages/me/myQuestions/myQuestions",
+        "pages/me/myQuestions/myQuestions",
+        "pages/me/myAnswer/myAnswer"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "资讯站",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "color": "#888",
+        "selectedColor": "#000",
+        "backgroundColor": "#fff",
+        "borderStyle": "gray",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/indexUnSelect.png",
+                "selectedIconPath": "images/indexSelected.png"
+            },
+            {
+                "pagePath": "pages/questionAnswer/homePage/homePage",
+                "text": "问答",
+                "iconPath": "images/questionAnswerUnSelect.png",
+                "selectedIconPath": "images/questionAnswerSelected.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "images/meUnSelect.png",
+                "selectedIconPath": "images/meSelected.png"
+            }
+        ]
+    }
+}

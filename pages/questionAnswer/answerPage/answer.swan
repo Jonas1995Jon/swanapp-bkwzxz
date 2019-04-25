@@ -1,0 +1,17 @@
+<view class="container">
+	<form bindsubmit="formSubmitHandle">
+		<view class="top">
+			<view class="leftview">
+				<view id="fabu" class="{{buttonRight}}"   bindtap="tapHandle">回答</view>
+				<!-- <button form-type="submit"  class="button-right" size="mini" style="border-radius: 50px;" disabled="{{subdis}}">回答</button> -->
+			</view>
+		</view>
+		<view class="titleinput">
+            <text name="title" >{{titles}}</text>
+		</view>
+		<view class="hr"></view>
+		<view class="contentinput">
+			<textarea class="content-area" bindinput="bindinput1" name="content" bindblur="blurcheck1" placeholder="分享你真实的观点和经验" auto-height />
+		</view>
+	</form>
+</view>

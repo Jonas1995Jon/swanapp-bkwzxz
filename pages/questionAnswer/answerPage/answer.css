@@ -1,0 +1,48 @@
+.container{
+    height:100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+.hr {
+  width:91%;
+  height: 2rpx;
+  margin:20rpx auto;
+  background-color: #eeeeee;
+}
+.button-right{
+    text-align: center;
+    color: red;
+    top: 24rpx;
+    right: 34rpx;
+    width: 135rpx;
+    position:absolute;
+    border: 3rpx solid red;
+    border-radius: 50rpx;
+}
+.button-righted{
+    text-align: center;
+    color: lightgray;
+    top: 24rpx;
+    right: 34rpx;
+    width: 135rpx;
+    position:absolute;
+    border: 3rpx solid lightgray;
+    border-radius: 50rpx;
+}
+.top{
+    height: 80rpx;
+}
+.leftview{
+    position:relative;
+}
+.titleinput{
+    font-size: 1.2em;
+    margin: 20rpx 40rpx;
+}
+.contentinput{
+    margin:  20rpx 40rpx;
+}
+.content-area{
+    width: 100%;
+}
